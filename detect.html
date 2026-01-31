@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image Detector</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>AI Misuse Detection & Awareness</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="risks.html">Risks</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="measures.html">Measures</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="detect.html" class="active">AI Detector</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Upload an Image to Detect</h2>
+        <form action="http://127.0.0.1:5000/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required />
+            <button type="submit">Detect</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> AI Misuse Awareness</p>
+    </footer>
+</body>
+
+</html>
