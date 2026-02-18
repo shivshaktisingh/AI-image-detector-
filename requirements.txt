@@ -1,7 +1,8 @@
+
 Flask==2.3.3 
 gunicorn
 tensorflow==2.12.0
 numpy
 Pillow
 python-dotenv
-Werkzeug
+
