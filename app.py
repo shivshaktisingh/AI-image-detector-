@@ -32,7 +32,11 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model file not found at '{MODEL_PATH}'. Place your .h5 model there.")
 
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(
+    MODEL_PATH,
+    compile=False
+)
+
 
 # ------------------------------
 # Flask app
