@@ -2,7 +2,7 @@
 Flask==2.3.3 
 gunicorn
 tensorflow-cpu==2.10.1
-numpy
+numpy==1.26.4
 Pillow
 python-dotenv
 
