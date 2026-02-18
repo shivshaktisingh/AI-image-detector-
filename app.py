@@ -16,7 +16,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 # ------------------------------
 load_dotenv()  # reads .env in project root
 
-MODEL_PATH = os.getenv("MODEL_PATH", "ai_image_detector_model.h5")
+MODEL_PATH = os.getenv("MODEL_PATH", "ai_image_detector.h5")
 API_KEYS_ENV = os.getenv("API_KEYS", "")
 UPLOAD_FOLDER = os.getenv("UPLOAD_FOLDER", "static/uploads")
 DEBUG_MODE = os.getenv("DEBUG", "True").lower() in ("1", "true", "yes")
